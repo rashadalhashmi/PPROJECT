@@ -116,10 +116,10 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(1, 4, 136, 0.9);
 }
 #header.header-transparent {
-  background: #0d13a1;
+  background: #ffff;
 }
 #header.header-scrolled {
-  background: rgba(1, 4, 136, 0.9);
+  background: #ffff;
   height: 60px;
 }
 #header .logo h1 {
@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
+  color: #FF4400;
   text-decoration: none;
 }
 #header .logo img {
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   font-weight: 500;
   font-family: "Cairo", system-ui;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(11, 1, 1, 0.7);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 25px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+  color: #070000;
 }
 .navbar .dropdown ul {
   display: block;
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(2, 5, 161, 0.91);
+  background:#16161fe8;
   position: absolute;
   bottom: 0;
   top: 0;
