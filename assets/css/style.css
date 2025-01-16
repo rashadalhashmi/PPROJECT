@@ -1344,7 +1344,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #010351;
+  background: #25272f;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1354,7 +1354,7 @@ section {
 }
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #010246;
+  background: #282829;
   color: #fff;
   border-top: 4px solid #1acc8d;
   text-align: center;
@@ -1459,7 +1459,7 @@ section {
   background: #149f6e;
 }
 #footer .copyright {
-  border-top: 1px solid #010479;
+  border-top: 1px solid #ffffff;
   text-align: center;
   padding-top: 30px;
 }
@@ -1520,5 +1520,15 @@ section {
 .img-blogs {
   width: 100%;
   border-radius: 15px;
-  box-shadow: 0 0 8px 2px gainsboro;
+  box-shadow: 0 0 8px 2px rgb(161, 159, 159);
+}
+.card{
+  height: 100%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
