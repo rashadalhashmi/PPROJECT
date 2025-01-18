@@ -94,7 +94,7 @@ var translations = {
         Features: "مميزات",
         Contact: "تواصل",
         Contact_Us: "تواصل معنا",
-        brand: "نقل عفش المميز",
+        brand: "المميز لنقل العفش",
         faq: "الأسئلة الشائعة",
         Move_your_furniture: " شركة المميز للنقل أنقل أثاثك بأمان وسهولة مع خبراء النقل",
         Al_Amal_Furniture: "شركة المميز للنقل",
