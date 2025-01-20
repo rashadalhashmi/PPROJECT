@@ -274,6 +274,9 @@ h1, h2, h3, h4, h5, h6 {
   .radio-wrapper-19{
     display: none;
   }
+
+  
+ 
 }
 .navbar-mobile {
   position: fixed;
@@ -1349,7 +1352,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #25272f;
+  background:linear-gradient(to right, #0d1b2a, #433647);
+
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -1527,15 +1531,8 @@ section {
   border-radius: 15px;
   box-shadow: 0 0 8px 2px rgb(161, 159, 159);
 }
-.feature-card{
-  height: 100%;
-  min-height: 10.5rem;
 
-}
 
-.feature-card:hover {
-
-}
 
 
 .carousel-item {
@@ -1613,6 +1610,16 @@ section {
   right: 0;
 }
 
+
+.toggle-container label[for="example-mobile-19-1"] {
+  left: 0;
+}
+
+.toggle-container label[for="example-mobile-19-2"] {
+  right: 0;
+}
+
+
 .toggle-container input[type="radio"]:checked + .toggle-label {
   color: #fff;
 }
@@ -1631,4 +1638,56 @@ section {
 
 #example-19-2:checked ~ .slider {
   transform: translateX(100%);
+}
+
+#example-mobile-19-2:checked ~ .slider {
+  transform: translateX(100%);
+}
+
+.radio-wrapper-19-mobile{
+  justify-content: start;
+  align-items: center;
+  display: none;
+}
+
+
+/* By default, hide the mobile toggle and show the desktop toggle */
+.radio-wrapper-19-mobile {
+  display: none;
+}
+
+.radio-wrapper-19 {
+  display: flex; /* or inline-flex depending on your layout */
+}
+
+/* For mobile screens (width <= 768px), show the mobile toggle and hide the desktop toggle */
+@media screen and (max-width: 992px) {
+  .radio-wrapper-19-mobile {
+    display: flex; /* or inline-flex depending on your layout */
+  }
+
+  .radio-wrapper-19 {
+    display: none;
+  }
+}
+
+.contact-card {
+  transition: border-radius 0.3s ease, transform 0.3s ease;
+}
+
+.contact-card:hover {
+  border-radius: 50%; /* Makes the border circular */
+  transform: scale(1.06); /* Optional: Adds a slight zoom effect */
+}
+
+.feature-card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for the shadow and scaling */
+  height: 100%;
+  min-height: 10.5rem;
+   
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adds a more prominent shadow */
+  transform: translateY(-5px); /* Slightly lifts the card on hover */
 }

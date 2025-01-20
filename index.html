@@ -68,40 +68,53 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/" data-lang="Home" aria-label="الصفحة الرئيسية">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/#home" data-lang="Home" aria-label="الصفحة الرئيسية">Home</a></li>
           <li><a class="nav-link scrollto" href="/#about" data-lang="About" aria-label="صفحة عن الشركة">About</a></li>
-          <li><a class="nav-link scrollto" href="/#features" data-lang="Features"
-              aria-label="صفحة المميزات">Features</a></li>
+          <li><a class="nav-link scrollto" href="/#features" data-lang="Features" aria-label="صفحة المميزات">Features</a></li>
           <li><a class="nav-link scrollto" href="/blogs" data-lang="blogs" aria-label="blogs">Blogs</a></li>
-          <li><a class="nav-link scrollto" href="/#contact" data-lang="Contact_Us"
-              aria-label="صفحة تواصل معنا">Contact</a></li>
-          <li></li>
+          <li><a class="nav-link scrollto" href="/#contact" data-lang="Contact_Us"aria-label="صفحة تواصل معنا">Contact</a></li>
+
+          <li class="nav-link  lang-toggle-mobile">
+            <div class="radio-wrapper-19-mobile">
+              <div class="toggle-container">
+
+                <input id="example-mobile-19-1" type="radio" name="radio-examples-mobile" value="ar" checked>
+                <label for="example-mobile-19-1" class="toggle-label">عربي</label>
+      
+                <input id="example-mobile-19-2" type="radio" name="radio-examples-mobile" value="en">
+                <label for="example-mobile-19-2" class="toggle-label">En</label>
+      
+                <span class="slider"></span>
+              </div>
+            </div>
+          </li> 
+
+
         </ul>
 
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <div class="radio-wrapper-19">
+      <div class="radio-wrapper-19 lang-toggle ">
         <div class="toggle-container">
           <input id="example-19-1" type="radio" name="radio-examples" value="ar" checked>
           <label for="example-19-1" class="toggle-label">عربي</label>
-          
           <input id="example-19-2" type="radio" name="radio-examples" value="en">
           <label for="example-19-2" class="toggle-label">En</label>
-          
           <span class="slider"></span>
         </div>
       </div>
-      
     </div>
+
+
   </header><!-- End Header -->
 
 
 
 
   <main id="main">
-
-    <section>
+    <!--  ======= Carousel Section  ======= -->
+    <section id="home">
       <div id="modernCarousel" class="carousel  slide" data-bs-ride="carousel">
         <!-- Indicators -->
         <div class="carousel-indicators">
@@ -110,13 +123,13 @@
           <button type="button" data-bs-target="#modernCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#modernCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-  
+
         <!-- Slides -->
         <div class="carousel-inner">
-          <div class="carousel-item active " >
+          <div class="carousel-item active ">
             <!-- ======= Hero Section ======= -->
             <div id="hero">
-  
+
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
@@ -135,7 +148,7 @@
                   </div>
                 </div>
               </div>
-  
+
               <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0 24 150 28 " preserveAspectRatio="none">
                 <defs>
@@ -147,29 +160,29 @@
                 <g class="wave2">
                   <use xlink:href="#wave-path" x="50" y="0" fill="24262f">
                 </g> -->
-                <g class="wave3">
+                <!-- <g class="wave3">
                   <use xlink:href="#wave-path" x="50" y="9" fill="#24262e">
-                </g>
+                </g> -->
               </svg>
-  
+
             </div><!-- End Hero -->
           </div>
           <div class="carousel-item"
             style="background-image: url('./assets/img/WhatsApp\ Image\ 2025-01-15\ at\ 18.37.26_5f95c46f.jpg');">
             <div class="carousel-caption">
-              <h5>Modern and Reliable</h5>
-              <p>Our solutions are tailored to meet your needs.</p>
+              <!-- <h5>Modern and Reliable</h5>
+              <p>Our solutions are tailored to meet your needs.</p> -->
             </div>
           </div>
           <div class="carousel-item"
             style="background-image: url('./assets/img/WhatsApp\ Image\ 2025-01-15\ at\ 18.37.26_c6454b1f.jpg');">
             <div class="carousel-caption">
-              <h5>Join Us Today</h5>
-              <p>Let's create something extraordinary together.</p>
+              <!-- <h5>Join Us Today</h5>
+              <p>Let's create something extraordinary together.</p> -->
             </div>
           </div>
         </div>
-  
+
         <!-- Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#modernCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -181,6 +194,7 @@
         </button>
       </div>
     </section>
+    <!--End Carousel Section-->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -198,7 +212,7 @@
               وآمنة تضمن الحفاظ على سلامة ممتلكاتك. نحن نفخر بخبرتنا الطويلة في هذا المجال ونعمل دائماً على تقديم أفضل
               الحلول لتلبية احتياجاتك.</p>
 
-        
+
           </div>
         </div>
       </div>
@@ -476,69 +490,69 @@
     </section>
     <!-- End F.A.Q Section -->
 
-<!-- ======= Contact Section ======= -->
-<section id="contact" class="contact py-5">
-  <div class="container">
-    <div class="section-title text-center mb-5" data-aos="fade-up">
-      <p data-lang="Contact_Us" class="text-muted">Get in Touch with Us</p>
-    </div>
-
-    <div class="row gy-4 text-center justify-content-center">
-      
-      <!-- Location -->
-      <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
-        <div class="contact-card p-4 border rounded shadow-sm">
-          <div class="icon mb-3 text-primary">
-            <i class="bi bi-geo-alt fs-3"></i>
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact py-5">
+        <div class="container">
+          <div class="section-title text-center mb-5" data-aos="fade-up">
+            <p data-lang="Contact_Us" class="text-muted">Get in Touch with Us</p>
           </div>
-          <h4 data-lang="Location" class="fw-semibold">Location</h4>
-          <p class="text-muted">الكويت</p>
-        </div>
-      </div>
 
-      <!-- WhatsApp -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="contact-card p-4 border rounded shadow-sm">
-          <div class="icon mb-3 text-success">
-            <i class="bi bi-whatsapp fs-3"></i>
+          <div class="row gy-4 text-center justify-content-center">
+
+            <!-- Location -->
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+              <div class="contact-card p-4 border rounded shadow-sm">
+                <div class="icon mb-3 text-primary">
+                  <i class="bi bi-geo-alt fs-3"></i>
+                </div>
+                <h4 data-lang="Location" class="fw-semibold">Location</h4>
+                <p class="text-muted">الكويت</p>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="contact-card p-4 border rounded shadow-sm">
+                <div class="icon mb-3 text-success">
+                  <i class="bi bi-whatsapp fs-3"></i>
+                </div>
+                <h4 data-lang="Wahts_App" class="fw-semibold">WhatsApp</h4>
+                <a href="https://wa.me/+96550425098" class="text-decoration-none">
+                  <p class="text-muted">+965-5042-5098</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Instagram -->
+            <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
+              <div class="contact-card p-4 border rounded shadow-sm">
+                <div class="icon mb-3 text-danger">
+                  <i class="bi bi-instagram fs-3"></i>
+                </div>
+                <h4 data-lang="Instagram" class="fw-semibold">Instagram</h4>
+                <a href="https://www.instagram.com/naql_afsh60" class="text-decoration-none">
+                  <p class="text-muted">@naql_afsh60</p>
+                </a>
+              </div>
+            </div>
+
+            <!-- Call -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="contact-card p-4 border rounded shadow-sm">
+                <div class="icon mb-3 text-info">
+                  <i class="bi bi-phone fs-3"></i>
+                </div>
+                <h4 data-lang="Call" class="fw-semibold">Call</h4>
+                <a href="tel:+96550425098" class="text-decoration-none">
+                  <p class="text-muted">+965-5042-5098</p>
+                </a>
+              </div>
+            </div>
+
           </div>
-          <h4 data-lang="Wahts_App" class="fw-semibold">WhatsApp</h4>
-          <a href="https://wa.me/+96550425098" class="text-decoration-none">
-            <p class="text-muted">+965-5042-5098</p>
-          </a>
         </div>
-      </div>
-
-      <!-- Instagram -->
-      <div class="col-md-4" data-aos="fade-right" data-aos-delay="300">
-        <div class="contact-card p-4 border rounded shadow-sm">
-          <div class="icon mb-3 text-danger">
-            <i class="bi bi-instagram fs-3"></i>
-          </div>
-          <h4 data-lang="Instagram" class="fw-semibold">Instagram</h4>
-          <a href="https://www.instagram.com/naql_afsh60" class="text-decoration-none">
-            <p class="text-muted">@naql_afsh60</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- Call -->
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="contact-card p-4 border rounded shadow-sm">
-          <div class="icon mb-3 text-info">
-            <i class="bi bi-phone fs-3"></i>
-          </div>
-          <h4 data-lang="Call" class="fw-semibold">Call</h4>
-          <a href="tel:+96550425098" class="text-decoration-none">
-            <p class="text-muted">+965-5042-5098</p>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- End Contact Section -->
+      </section>
+      <!-- End Contact Section -->
 
 
   </main><!-- End #main -->
